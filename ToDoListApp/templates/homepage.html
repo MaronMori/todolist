@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header>
+        <h1>My To Do List</h1>
+        <button type="button" onclick="location.href={% url 'new' %}" class="new_task">+</button>
+    </header>
+    <hr>
+    <ul class="tasks">
+        {% for task in tasks.all %}
+                <li class="task">
+                    <label for="{{ task.pk }}" class="task_label">
+                        <input id="{{ task.pk }}" type="checkbox" class="task_checkbox"><span>{{ task }}</span>
+                    </label>
+                    <form method="post" action="{% url 'delete' task.pk %}" class="delete">
+                        {% csrf_token %}
+                        <button type="submit" onclick="" class="delete-button">Delete</button>
+                    </form>
+                </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

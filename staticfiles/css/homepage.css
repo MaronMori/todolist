@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_task{
+    margin-top: 30px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px; /* 角丸化して円形にする */
+}
+
+li{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    margin: 15px auto;
+    border: solid #66ccff 2px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+label, form{
+    display: inline-block;
+}
+
+form{
+    margin-right: 25px;
+}
+.task_checkbox{
+    margin-right: 10px;
+
+}
+
+label, .task_checkbox, .delete-button, .new_task{
+    cursor: pointer;
+}
+
+.task_checkbox:checked + span{
+    text-decoration: line-through;
+}

@@ -5,7 +5,6 @@ The difficult part of creating it, or rather, the first time I tried to create i
 I also tried to keep the operation and design as simple as possible since it is a to-do list. Since the purpose of this project was to create a web application in Python, I was not too particular about decorations using HTML and CSS.
 As for the functionality, when creating a to do list, simply go to the add page, enter the information, and submit it, and it will appear on the home page. When you want to delete a to do list, you can click the delete button next to each of the to do lists. If you have completed an item on your To Do List, you can click the check button on the left side of the list and a strike-through line will appear.
 
-
 Japanese:
 PythonのDjangoで作成したTo Do Listのwebアプリケーションです。
 作った理由は普段からTo Do Listを利用しているので、自分でも作れないかなと思い作成しました。
